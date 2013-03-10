@@ -1,0 +1,22 @@
+<h1>Nodes</h1>
+<ul class="nodes">
+  <li ng-repeat="node in nodes">
+      <h2>{{node.node}}</h2>
+      <ul>
+          <li ng-repeat="cn in node.childNodes">{{cn.node}}</li>          
+          <li>
+              <form name="ncf" ng-submit="newChildNode()">
+                  <input ng-model="newChildName" name="newChildName" type="input" placeholder="childNode Value" required />
+                  <input type="submit" value="create Child" />
+              </form>
+          </li>
+      </ul>
+  </li>
+  <li>
+      <form name="nf" ng-submit="newNode()">
+          <input ng-model="newNodeName" type="input" placeholder="Node Value" required />
+          <input type="submit" value="create Parent" />
+      </form>      
+  </li>
+</ul>
+<hr/>

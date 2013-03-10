@@ -1,0 +1,68 @@
+@import('reset');
+@import('mixins/stretch');
+@import('mixins/clearfix');
+
+//colors
+bg = #eee;
+positive = #56dd00;
+
+body{
+  background: bg;
+}
+
+h1{
+  color: darken(bg, 75%);
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  li{
+    display: inline;
+  }
+}
+
+.users{
+  list-style-type: none;
+  padding-left: 10px;
+  font-size: 18px;
+  input{
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    margin: 5px 0;
+  }
+}
+
+input[type="button"]{
+  margin-top: 10px;
+}
+
+.awesome{
+  color: positive;
+}
+
+
+.nodes {
+    > li {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #69f;
+        margin: 5px;
+        h2 {
+            font-size: 18px;
+            padding: 2px;
+            background: #69f;
+            color: #fff;
+            font-weight: bold;
+        }
+        li {
+            padding: 3px 15px;
+            border-top: 1px solid #69f;
+        }
+    }
+}
