@@ -1,9 +1,13 @@
 module.exports = function(app) {
     var mongoose = app.get('mongoose');  
     var myNodes = ['first','Second','Third','Fourth'];
+    var childSchema = mongoose.Schema({
+        node: String
+    });
       
     var nodeSchema = mongoose.Schema({
-        node: String
+        node: String,
+        childNodes: [childSchema]
     });
     
     var Node = mongoose.model('Node', nodeSchema);

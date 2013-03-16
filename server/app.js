@@ -35,7 +35,7 @@ app.use(require('./middleware/logging')());
 
 //DB objects
 app.set('Node', require('./objects/node.js')(app));
-app.set('ChildNode', require('./objects/childNode.js')(app));
+//app.set('ChildNode', require('./objects/childNode.js')(app));
 
 //routes
 fs.readdirSync(__dirname + '/routes').forEach(function(file) {

@@ -152,10 +152,10 @@ module.exports = function(grunt){
         ],
         tasks: ['livereload']
       },
-      testacular: {
-        files: ['app/js/**/*.js', 'test/browser/**/*.js'],
-        tasks: ['testacular:unit:run']
-      },
+//      testacular: {
+//        files: ['app/js/**/*.js', 'test/browser/**/*.js'],
+//        tasks: ['testacular:unit:run']
+//      },
       stylus: {
         files: ['app/styles/**/*.styl'],
         tasks: ['stylus']

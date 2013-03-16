@@ -5,7 +5,7 @@
       <ul>
           <li ng-repeat="cn in node.childNodes">{{cn.node}}</li>          
           <li>
-              <form name="ncf" ng-submit="newChildNode()">
+              <form name="ncf" ng-submit="updateNode()">
                   <input ng-model="newChildName" name="newChildName" type="input" placeholder="childNode Value" required />
                   <input type="submit" value="create Child" />
               </form>

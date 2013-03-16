@@ -1,5 +1,12 @@
 /* Node service */
 angular.module('app').factory('Node', ['$resource', function($resource){
+    return $resource('node/:id', {id: '@id'}, {
+        update: {method: 'PUT'}   
+    });
+}]);
+
+/* old
+angular.module('app').factory('Node', ['$resource', function($resource){
     
         var node = $resource('node/:id', {id: '@id'}, {
             update: {method: 'PUT'}
@@ -48,4 +55,4 @@ angular.module('app').factory('Node', ['$resource', function($resource){
         
         
     return NodeService;
-}]);
+}]); */
