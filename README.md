@@ -91,7 +91,7 @@ Use [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) to m
 Run `$ grunt build`. kicks off these grunt tasks. An optimized copy of your `app` has been created in the `build` directory. Now all you have to do is deploy the built version of the app (build) and give yourself a high five for the awesome performance.
 
 ##Testing Your Project
-Unit tests are extremely important in JavaScript projects, and can even be fun to write if you use great tools and write tests while you develop (TDD/BDD). We recommend using [Mocha](http://visionmedia.github.com/mocha/) as your test framework, and [Testacular](http://testacular.github.com/0.6.0/index.html) as your test runner. If you follow the conventions of this project then your Gruntfile.js is already setup for running your tests.
+Unit tests are extremely important in JavaScript projects, and can even be fun to write if you use great tools and write tests while you develop (TDD/BDD). We recommend using [Mocha](http://mochajs.org/) as your test framework, and [Testacular](http://testacular.github.com/0.6.0/index.html) as your test runner. If you follow the conventions of this project then your Gruntfile.js is already setup for running your tests.
 
 ###Browser Tests
 Tests that run in browsers (need DOM) are best run simultaniously in your target browsers with [testacular](http://vojtajina.github.com/testacular/) and [expect.js](https://github.com/LearnBoost/expect.js) for assertions. Place these in the `test/browser` directory.
